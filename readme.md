@@ -12,39 +12,54 @@
 
 1. Clone the Repository
 
-  git clone https://github.com/your-username/TwinWindAudioRecorder.git
-  cd TwinWindAudioRecorder
+    git clone https://github.com/your-username/TwinWindAudioRecorder.git
 
-2. Open in Xcode
-  Double-click TwinWindAudioRecorder.xcodeproj
-  In Xcode’s Targets → Signing & Capabilities, make sure:
-  Automatically manage signing is enabled
-  A valid Team is selected
-  Your Bundle Identifier (e.g. com.yourcompany.TwinWindAudioRecorder) is unique
+    cd TwinWindAudioRecorder
 
-3. Insert Your OpenAI API Key
-  The app reads your Whisper key from the Keychain under the account name OpenAIAPIKey.
-  Manually (recommended for development):
-  Open Keychain Access on your Mac
-  Choose login in the sidebar → File → New Password Item…
-  Account Name: OpenAIAPIKey
-  Password: your sk-… secret key
-  Click Add
+3. Open in Xcode
+    Double-click TwinWindAudioRecorder.xcodeproj
+
+    In Xcode’s Targets → Signing & Capabilities, make sure:
+  
+    Automatically manage signing is enabled
+  
+    A valid Team is selected
+  
+    Your Bundle Identifier (e.g. com.yourcompany.TwinWindAudioRecorder) is unique
+
+4. Insert Your OpenAI API Key
+    The app reads your Whisper key from the Keychain under the account name OpenAIAPIKey.
+
+    Manually (recommended for development):
+
+    Open Keychain Access on your Mac
+
+    Choose login in the sidebar → File → New Password Item…
+
+    Account Name: OpenAIAPIKey
+
+    Password: your sk-… secret key
+
+    Click Add
 
 
-4. Select Your Device
-  In Xcode’s toolbar device menu, choose Any iOS Device (arm64) or plug in your iPhone via USB/Wi-Fi.
-  Your device should appear in the list—select it.
+6. Select Your Device
+    In Xcode’s toolbar device menu, choose Any iOS Device (arm64) or plug in your iPhone via USB/Wi-Fi.
 
-5. Build & Run
-  Press ⌘R (Run).
-  On first launch, tap Allow when prompted for microphone access.
-  You’ll land on the Recorder screen—tap the big mic icon to start/stop recording.
-  Switch to Sessions to browse by date; tap a session to view its 30 s segments and live transcription status.
+    Your device should appear in the list—select it.
+
+8. Build & Run
+    Press ⌘R (Run).
+
+    On first launch, tap Allow when prompted for microphone access.
+
+    You’ll land on the Recorder screen—tap the big mic icon to start/stop recording.
+
+    Switch to Sessions to browse by date; tap a session to view its 30 s segments and live transcription status.
 
 Troubleshooting
-Build errors about SwiftData macros?![Capture](https://github.com/user-attachments/assets/5a235312-94c5-4392-a438-46cef3f2943d)
 
+Build errors about SwiftData macros?
 Ensure your Deployment Target (Targets → General) is iOS 18.0+.
 
 “Select a provisioning profile” when archiving?
