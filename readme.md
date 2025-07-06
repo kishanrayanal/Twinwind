@@ -1,3 +1,5 @@
+![Capture](https://github.com/user-attachments/assets/0b19a859-60ca-4474-8c79-3bef5f3872ba)
+![Capture1](https://github.com/user-attachments/assets/26030414-ab25-43ac-8d42-e2df4570eda0)
 ## Prerequisites
 
 - **macOS 14+**  
@@ -29,6 +31,7 @@
   Password: your sk-… secret key
   Click Add
 
+
 4. Select Your Device
   In Xcode’s toolbar device menu, choose Any iOS Device (arm64) or plug in your iPhone via USB/Wi-Fi.
   Your device should appear in the list—select it.
@@ -40,7 +43,8 @@
   Switch to Sessions to browse by date; tap a session to view its 30 s segments and live transcription status.
 
 Troubleshooting
-Build errors about SwiftData macros?
+Build errors about SwiftData macros?![Capture](https://github.com/user-attachments/assets/5a235312-94c5-4392-a438-46cef3f2943d)
+
 Ensure your Deployment Target (Targets → General) is iOS 18.0+.
 
 “Select a provisioning profile” when archiving?
@@ -51,3 +55,4 @@ On your device, go to Settings → Privacy & Security → Microphone → enable 
 
 Transcriptions stuck at “Processing…”?
 Verify that KeychainHelper.shared.get("OpenAIAPIKey") prints a non-nil value in the console.
+
